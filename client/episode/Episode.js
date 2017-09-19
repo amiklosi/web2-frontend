@@ -51,7 +51,7 @@ angularModule.config(function ($stateProvider) {
                 .then($q.resolve)
                 .catch(function (err) {
                     $state.go('notfound');
-                })
+                });
 
             },
             show: function ($state, $stateParams, $http, API_SERVER_ENDPOINT, $q) {
@@ -59,7 +59,7 @@ angularModule.config(function ($stateProvider) {
                     .then($q.resolve)
                     .catch(function (err) {
                         $state.go('notfound');
-                    })
+                    });
 
             }
         }
